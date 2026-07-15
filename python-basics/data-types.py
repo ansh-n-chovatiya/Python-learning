@@ -47,3 +47,30 @@ last_name = "chovatiya"
 full_name = first_name + " " + last_name
 
 print(full_name)
+
+
+print(first_name[0])
+print(first_name[0:3])
+print(first_name[len(first_name) - 1])
+
+
+temp_var = "01234567"
+
+print(temp_var[1:6:2])  # 135
+print(temp_var[1:])  # 1234567
+print(temp_var[:5])  # 01234
+print(temp_var[::2])  # 0246
+print(temp_var[-8])
+print(temp_var[-4])
+
+
+print(temp_var[::-2])
+
+
+temp_str = "hello this is all about me"
+temp_capital = "HELLO IN CAPITAL"
+
+print(temp_str.upper())
+print(temp_capital.lower())
+
+print(temp_capital.replace("IN", "123"))
