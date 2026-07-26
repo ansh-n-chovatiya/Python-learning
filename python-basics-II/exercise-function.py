@@ -25,15 +25,34 @@
 #     a = a[:-1]
 
 
-sum = 0
+# sum_var = 0
 
 
-def test_fun():
-    sum += 1
+# def test_fun():
+#     global sum_var
+
+#     sum_var = sum_var + 1
 
 
-print(sum)
+# print(sum_var)
 
-test_fun()
+# test_fun()
 
-print(sum)
+# print(sum_var)
+
+
+x = "global"
+
+
+def outer():
+    x = "local"
+
+    def inner():
+        nonlocal x
+        x = "inner"
+
+    inner()
+    print(x)
+
+
+outer()
